@@ -1,0 +1,76 @@
+.containerLoginAndRegistration{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  backdrop-filter: blur(3px);
+}
+
+.containerInputs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.483);
+  width: 300px;
+  height: 500px;
+  gap: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.tituloInput{
+  font-size: 2.5em;
+  color: #0ad;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.formContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.emailInput, .senhaInput{
+  font-size: 1.2em;
+  border: none;
+  border-bottom: 2px solid #0ad;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.inputs::placeholder{
+  font-style: italic;
+  opacity: 80%;
+}
+
+.inputs:focus{
+  transform: scale(1.1);
+}
+
+.usuarioAutenticado{
+  background-color: #0ad;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  width: 150px;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.usuarioAutenticado:hover{
+  background-color: rgb(11, 147, 188);
+  transform: scale(1.1);
+}
