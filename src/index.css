@@ -9,6 +9,7 @@ body{
   min-height: 100vh;
   background-image: url('../src/imgs/mike-petrucci-c9FQyqIECds-unsplash.jpg');
   background-position: center center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;

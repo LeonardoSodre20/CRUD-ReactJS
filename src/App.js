@@ -5,18 +5,30 @@ import Axios from 'axios'
 
 function App() {
 
-  const handleClickRegistro = values => {
-    Axios.post("https://localhost:3001/registro", {
+  const handleLogin = (values) => {
+    Axios.post("http://localhost:3001/login", {
       email: values.email,
-      password: values.password
-    }).then(response => {
-      console.log(response)
-    })
-  }
+      password: values.password,
+    }).then((response) => {
+      alert(response.data.msg);
+    });
 
-  const handleClickLogin = values => {
-    console.log(values)
-  }
+    
+  };
+
+  const handleRegister = (values) => {
+    Axios.post("http://localhost:3001/register", {
+      email: values.email,
+      password: values.password,
+    }).then((response) => {
+      alert(response.data.msg);
+      console.log(response);
+    });
+
+    values.email = ""
+    values.password = ""
+
+  };
 
   const validationLogin = yup.object().shape({
     email: yup
@@ -51,20 +63,20 @@ function App() {
             <div className="containerInputs">
               <h1 className="tituloInput">Login</h1>
               <Formik initialValues={{}}
-              onSubmit={handleClickLogin}
+              onSubmit={handleLogin}
               validationSchema={validationLogin}>
               <Form className="formContainer">
                 <div className="containerEmail">
                 <Field name="email" className="emailInput inputs" placeholder="Digite seu email..."></Field>
                 <ErrorMessage component="span"
                   name="email"
-                  className="errorMessageEmail"/>
+                  className="errorMessage"/>
                 </div>
                 <div className="containerPassword">
                 <Field name="password" className="senhaInput inputs" placeholder="Digite sua senha..." type="password"></Field>
                 <ErrorMessage component="span"
                   name="password"
-                  className="errorMessagePassword"/>
+                  className="errorMessageEmail"/>
                 </div>
                 <button className="usuarioAutenticado" type='submit'>Login</button>
               </Form>
@@ -74,27 +86,27 @@ function App() {
             <div className="containerInputs">
               <h1 className='tituloInput'>Registrar</h1>
               <Formik initialValues={{}}
-              onSubmit={handleClickRegistro}
+              onSubmit={handleRegister}
               validationSchema={validationRegistro}>
               <Form className="formContainer">
                 <div className="containerEmail">
                 <Field name="email" className="emailInput inputs" placeholder="Digite seu email..."></Field>
                 <ErrorMessage component="span"
                   name="email"
-                  className="errorMessageEmail"/>
+                  className="errorMessage"/>
                 </div>
                 <div className="containerPassword">
                 <Field name="password" className="senhaInput inputs" placeholder="Digite sua senha..." type="password"></Field>
                 <ErrorMessage component="span"
                   name="password"
-                  className="errorMessagePassword"/>
+                  className="errorMessage"/>
                 </div>
 
                 <div className="containerPassword">
                 <Field name="confirmPassword" className="senhaInput inputs" placeholder="Confirme sua senha..." type="password"></Field>
                 <ErrorMessage component="span"
                   name="confirmPassword"
-                  className="errorMessagePassword"/>
+                  className="errorMessage"/>
                 </div>
                 <button className="usuarioAutenticado" type='submit'>Registrar-se</button>
               </Form>

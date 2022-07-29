@@ -7,6 +7,7 @@
   flex-wrap: wrap;
   gap: 30px;
   backdrop-filter: blur(3px);
+  margin-bottom: 30px;
 }
 
 .containerInputs{
@@ -15,7 +16,7 @@
   justify-content: center;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.483);
-  width: 300px;
+  width: 80%;
   height: 500px;
   gap: 20px;
   border-radius: 20px;
@@ -36,6 +37,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 30px;
+  padding: 15px;
 }
 
 .emailInput, .senhaInput{
@@ -43,16 +45,21 @@
   border: none;
   border-bottom: 2px solid #0ad;
   transition: 0.5s;
-  width: 100%;
+  width: 90%;
+  background-color: transparent;
+  padding: 15px;
 }
 
 .inputs::placeholder{
   font-style: italic;
-  opacity: 80%;
+  opacity: 85%;
+  color: #434343;
 }
 
 .inputs:focus{
   transform: scale(1.1);
+  opacity: 100%;
+  color: #000;
 }
 
 .usuarioAutenticado{
@@ -73,4 +80,14 @@
 .usuarioAutenticado:hover{
   background-color: rgb(11, 147, 188);
   transform: scale(1.1);
+}
+
+.errorMessage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff0000;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px;
 }
