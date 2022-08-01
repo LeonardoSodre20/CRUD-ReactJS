@@ -10,7 +10,7 @@ A aplicação começa com uma tela de login para o usuário , no qual , terá qu
 ## Layout web
 ![Web 1](https://github.com/LeonardoSodre20/Assets/blob/main/CRUD/WhatsApp%20Image%202022-07-31%20at%2023.47.48.jpeg)
 
-![Web 2](https://github.com/LeonardoSodre20/Assets/blob/main/Web/WhatsApp%20Image%202022-07-26%20at%2016.41.12.jpeg)
+![Web 2](https://github.com/LeonardoSodre20/Assets/blob/main/CRUD/WhatsApp%20Image%202022-07-31%20at%2023.50.08.jpeg)
 
 # Tecnologias utilizadas
 
