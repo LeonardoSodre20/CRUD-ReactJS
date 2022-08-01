@@ -25,7 +25,7 @@ Pré-requisitos: npm / yarn
 
 ```bash
 # clonar repositório
-git clone 
+git clone https://github.com/LeonardoSodre20/CRUD-ReactJS.git
 
 # entrar na pasta do projeto my-project
 cd my-project
@@ -36,6 +36,13 @@ npm install
 # executar o projeto
 npm start
 ```
+
+## Back end
+
+express
+mysql
+nodemon
+cors
 
 # Autor
 
