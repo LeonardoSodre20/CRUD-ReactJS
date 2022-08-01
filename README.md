@@ -8,7 +8,7 @@ CRUD-ReactJS é uma aplicação web , no qual , consiste basicamente em efetuar 
 A aplicação começa com uma tela de login para o usuário , no qual , terá que efetuar um cadastro e depois entrar com o login. Depois disso , o usuário irá ser encaminhado para um dashboard , no qual , ele irá poder efetuar cadastros de produtos.
 
 ## Layout web
-![Web 1](https://github.com/LeonardoSodre20/Assets/blob/main/Web/WhatsApp%20Image%202022-07-26%20at%2016.40.30.jpeg)
+![Web 1](https://github.com/LeonardoSodre20/Assets/blob/main/CRUD/WhatsApp%20Image%202022-07-31%20at%2023.47.48.jpeg)
 
 ![Web 2](https://github.com/LeonardoSodre20/Assets/blob/main/Web/WhatsApp%20Image%202022-07-26%20at%2016.41.12.jpeg)
 
