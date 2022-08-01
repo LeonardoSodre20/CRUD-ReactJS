@@ -39,10 +39,10 @@ npm start
 
 ## Back end
 
-express
-mysql
-nodemon
-cors
+# express
+# mysql
+# nodemon
+# cors
 
 # Autor
 
