@@ -18,6 +18,13 @@ A aplicação começa com uma tela de login para o usuário , no qual , terá qu
 - @material-ui
 - Axios
 
+## Back end
+
+- express
+- mysql
+- nodemon
+- cors
+
 # Como executar o projeto
 
 ## Front end web
@@ -36,13 +43,6 @@ npm install
 # executar o projeto
 npm start
 ```
-
-## Back end
-
-- express
-- mysql
-- nodemon
-- cors
 
 # Autor
 
