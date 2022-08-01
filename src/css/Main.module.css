@@ -1,0 +1,71 @@
+.containerPrincipal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 70vw;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.titleCadastro{
+    font-size: 2.2em;
+    color: #f1f1f1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.containerCadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    width: 60%;
+    height: 500px;
+    background-color: #355C7D;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.inputProdutos{
+    width: 85%;
+    font-size: 1.3em;
+    color: #000;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border: none;
+    transition: 0.8s;
+}
+
+.inputProdutos::placeholder{
+    font-style: italic;
+    color: #212121;
+}
+
+.inputProdutos:focus{
+    transform: scale(1.1);
+}
+
+.buttonCadastrar{
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 250px;
+    color: #fff;
+    background-color: #FF7582;
+    border: none;
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttonCadastrar:hover{
+    transform: scale(1.1);
+    background-color: #d55663;
+}

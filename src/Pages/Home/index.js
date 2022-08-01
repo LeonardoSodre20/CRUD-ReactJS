@@ -74,7 +74,7 @@ function Home() {
           name="password"
           className="errorMessage"/>
         </div>
-       <button className="usuarioAutenticado" type='submit' onClick={handleLogin}>Login</button>
+       <Link to="/main"><button className="usuarioAutenticado" type='submit' onClick={handleLogin}>Login</button></Link>
       </Form>
       </Formik>
     </div>
